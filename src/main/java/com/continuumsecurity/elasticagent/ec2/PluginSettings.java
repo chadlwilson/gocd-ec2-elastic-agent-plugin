@@ -149,7 +149,7 @@ public class PluginSettings {
         Region newRegion = Region.of(configuredRegion);
 
         if (!Region.regions().contains(newRegion)) {
-            throw new IllegalArgumentException("Region does not exist.");
+            throw new IllegalArgumentException("Region " + newRegion + " does not exist.");
         }
 
         return newRegion;

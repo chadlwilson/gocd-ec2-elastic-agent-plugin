@@ -22,7 +22,7 @@ plugins {
 }
 
 group 'com.continuumsecurity.elasticagent'
-version '2.2.2'
+version '2.3.0'
 
 // these values that go into plugin.xml
 project.ext.pluginDesc = [
@@ -35,11 +35,10 @@ project.ext.pluginDesc = [
         vendorUrl  : 'https://github.com/continuumsecurity/GoCD-EC2-Elastic-Agent-Plugin'
 ]
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 11
+targetCompatibility = 11
 
 repositories {
-    jcenter()
     mavenCentral()
 }
 
