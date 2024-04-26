@@ -24,6 +24,7 @@ import com.continuumsecurity.elasticagent.ec2.PluginRequest;
 import com.continuumsecurity.elasticagent.ec2.RequestExecutor;
 import com.continuumsecurity.elasticagent.ec2.executors.CreateAgentRequestExecutor;
 import com.continuumsecurity.elasticagent.ec2.models.JobIdentifier;
+import com.continuumsecurity.elasticagent.ec2.utils.Util;
 
 import java.util.Map;
 
@@ -75,7 +76,7 @@ public class CreateAgentRequest {
     }
 
     public boolean hasEnvironment() {
-        return environment != null && !environment.isBlank();
+        return !Util.isBlank(environment);
     }
 
     public static CreateAgentRequest fromJSON(String json) {
