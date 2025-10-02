@@ -56,21 +56,21 @@ sourceSets {
 dependencies {
     compileOnly 'cd.go.plugin:go-plugin-api:19.8.0'
 
-    compile 'org.apache.commons:commons-lang3:3.8.1'
-    compile 'com.google.code.gson:gson:2.8.5'
-    compile 'com.google.guava:guava:23.0'
-    compile 'joda-time:joda-time:2.10.3'
-    compile 'commons-io:commons-io:2.6'
-    compile 'org.freemarker:freemarker:2.3.29'
-    compile 'software.amazon.awssdk:ec2:2.10.30'
+    implementation 'org.apache.commons:commons-lang3:3.8.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.guava:guava:23.0'
+    implementation 'joda-time:joda-time:2.10.3'
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'org.freemarker:freemarker:2.3.29'
+    implementation 'software.amazon.awssdk:ec2:2.10.30'
 
-    testCompile 'org.junit.jupiter:junit-jupiter-api:5.3.2'
-    testCompile 'org.junit.jupiter:junit-jupiter-engine:5.3.2'
-    testCompile 'org.junit.jupiter:junit-jupiter-params:5.3.2'
-    testCompile 'org.hamcrest:hamcrest-library:2.1'
-    testCompile 'org.mockito:mockito-core:3.0.0'
-    testCompile 'org.mockito:mockito-junit-jupiter:3.0.0'
-    testCompile 'org.skyscreamer:jsonassert:1.5.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.3.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.3.2'
+    testImplementation 'org.hamcrest:hamcrest-library:2.1'
+    testImplementation 'org.mockito:mockito-core:3.0.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:3.0.0'
+    testImplementation 'org.skyscreamer:jsonassert:1.5.0'
 }
 
 processResources {
@@ -112,7 +112,7 @@ test {
 }
 
 jar {
-    from(configurations.compile) {
+    from(configurations.runtimeClasspath) {
         into "lib/"
     }
 
