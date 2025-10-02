@@ -54,23 +54,23 @@ sourceSets {
 }
 
 dependencies {
-    compileOnly group: 'cd.go.plugin', name: 'go-plugin-api', version: '19.8.0'
+    compileOnly 'cd.go.plugin:go-plugin-api:19.8.0'
 
-    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'
-    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
-    compile group: 'com.google.guava', name: 'guava', version: '23.0'
-    compile group: 'joda-time', name: 'joda-time', version: '2.10.3'
-    compile group: 'commons-io', name: 'commons-io', version: '2.6'
-    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.29'
-    compile group: 'software.amazon.awssdk', name: 'ec2', version: '2.10.30'
+    compile 'org.apache.commons:commons-lang3:3.8.1'
+    compile 'com.google.code.gson:gson:2.8.5'
+    compile 'com.google.guava:guava:23.0'
+    compile 'joda-time:joda-time:2.10.3'
+    compile 'commons-io:commons-io:2.6'
+    compile 'org.freemarker:freemarker:2.3.29'
+    compile 'software.amazon.awssdk:ec2:2.10.30'
 
-    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.2'
-    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.2'
-    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.3.2'
-    testCompile group: 'org.hamcrest', name: 'hamcrest-library', version: '2.1'
-    testCompile group: 'org.mockito', name: 'mockito-core', version: '3.0.0'
-    testCompile group: 'org.mockito', name: 'mockito-junit-jupiter', version: '3.0.0'
-    testCompile group: 'org.skyscreamer', name: 'jsonassert', version: '1.5.0'
+    testCompile 'org.junit.jupiter:junit-jupiter-api:5.3.2'
+    testCompile 'org.junit.jupiter:junit-jupiter-engine:5.3.2'
+    testCompile 'org.junit.jupiter:junit-jupiter-params:5.3.2'
+    testCompile 'org.hamcrest:hamcrest-library:2.1'
+    testCompile 'org.mockito:mockito-core:3.0.0'
+    testCompile 'org.mockito:mockito-junit-jupiter:3.0.0'
+    testCompile 'org.skyscreamer:jsonassert:1.5.0'
 }
 
 processResources {
